@@ -1,0 +1,29 @@
+<p>list-user works!</p>
+<div class="col-md-6 user-container">
+    <h2 style="margin: auto"> User Details</h2>
+    <button class="btn btn-danger" style="width:100px" > Add User</button>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th class="hidden">Id</th>
+        <th>FirstName</th>
+        <th>Salary</th>
+        <th>Age</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let user of users">
+        <td class="hidden">{{user.id}}</td>
+        <td>{{user.employee_name}}</td>
+        <td>{{user.employee_salary}}</td>
+        <td>{{user.employee_age}}</td>
+        <td>{{user.profile_image}}</td>
+     <td>
+          <button class="btn btn-success" > Delete</button>
+          <button class="btn btn-success" style="margin-left: 20px;"> Edit</button></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
